@@ -79,8 +79,18 @@ body {
 
 .routine{
   border: solid 1px black;
+  border-radius: 10px;
+  background-color: #202020;
   width: 200px;
   height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.routine span{
+  color: white;
 }
 
 /* MEDIA QUERY */
