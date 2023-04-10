@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/crearRutina.css" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/f81212eb3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Crear rutina</title>
+  </head>
+  <body>
+    <div class="side-navbar">
+      <div class="logo-item">
+        <i class="fa-solid fa-bars fa-xl" id="sidebar-menu-icon"></i>
+      </div>
+
+      <div class="sidebar-items">
+        <div class="item">
+          <i class="fa-solid fa-house fa-lg"></i
+          ><a class="active" href="/index.html">Home</a>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-house fa-lg"></i
+          ><a href="/crearRutina.html">News</a>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-house fa-lg"></i><a href="">Contact</a>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-house fa-lg"></i><a href="">About</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <form class="form" action="">
+        <h1>Crear Rutina</h1>
+        <div class="field">
+          <span>Nombre rutina</span>
+          <input type="text" />
+        </div>
+        <div class="field">
+            <span>Ejercicio 1</span>
+            <input type="text">
+            <span>Numero de series</span>
+            <input type="text">
+            <span>Rango de repeticiones</span>
+            <input type="text">
+        </div>
+        <div class="field btn" id="field-btn">
+            <button type="button" class="btn-add">Add excercise</button>
+        </div>
+      </form>
+    </div>
+<script src="js/crearRutina.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
