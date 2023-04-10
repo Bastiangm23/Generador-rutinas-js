@@ -3,6 +3,8 @@ const fieldBtn = document.querySelector("#field-btn");
 const btn = document.querySelector(".btn-add");
 const btnPublicar = document.querySelector("#btn-publicar");
 var counter = 2;
+var counterId = 0;
+var rutinas = [];
 
 btn.addEventListener("click", () => {
   let newDiv = document.createElement("div");
@@ -12,7 +14,7 @@ btn.addEventListener("click", () => {
   newspan.innerHTML = "Ejercicio " + counter;
 
   let newInput = document.createElement("input");
-  newInput.id= "nombre-ejercicio-" + counter;
+  newInput.id = "nombre-ejercicio-" + counter;
 
   let newSpanInputNumber = document.createElement("span");
   newSpanInputNumber.innerHTML = "Numero de series";
@@ -25,7 +27,6 @@ btn.addEventListener("click", () => {
   let newInputNumberRep = document.createElement("input");
   newInputNumberRep.type = "number";
   newInputNumberRep.id = "repeticiones-ejercicio-" + counter;
-
 
   counter++;
 
@@ -46,5 +47,13 @@ btn.addEventListener("click", () => {
 });
 
 btnPublicar.addEventListener("click", () => {
+    nombreRutina = document.querySelector("#nombre-rutina").value;
+    var nuevaRutina = {
+        id: counterId,
+        nombre: nombreRutina,
+    }
+    counterId++;
 
+    rutinas.push(nuevaRutina);
+    console.log(rutinas);
 });
